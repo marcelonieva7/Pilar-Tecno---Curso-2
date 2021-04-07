@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+    color: #9698a6;
+}
+h1, h2, h3 {
+    font-weight: 300;
+    line-height: 1.15;
+    color: #2d314d;
+    margin-top: 0px;
+}
+.dionne-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    color: #9698a6;
+}
+.dionne-header__logo {
+    width: 137px;
+    height: 52px;
+}
+.dionne-header__nav a {
+    font-size: 0.85rem;
+    margin-right: 32px;
+    position: relative;
+}
+.dionne-header__nav a:hover {
+    color: #2d314d;
+}
+.dionne-header__nav a:hover::before {
+    opacity: 1;
+}
+.dionne-header__nav a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+.container {
+    padding: 0 100px;
+}
+.dionne-hero {
+    height: calc(100vh - 80px);
+    background-image: none;
+    display: flex;
+    background-color: #fafafa;
+}
+.dionne-hero-text {
+    width: 50%;
+}
+.dionne-hero-img {
+    width: 50%;
+    position: relative;
+}
+.dionne-hero-img::before {
+    content: "";
+    background-image: url(../images/bg-intro-desktop.svg);
+    width: calc(100% + 100px);
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0% 83%;
+    background-size: 150%;
+}
+.dionne-hero-img::after {
+    content: "";
+    width: calc(100% + 100px);
+    height: 100%;
+    background-image: url(../images/image-mockups.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: -50% 50%;
+}
+.dionne-hero-text__title {
+    font-size: 3.25rem;
+    margin:15% 0;
+}
+.dionne-hero-text p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 0.875rem;
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+.btn:hover::before {
+    opacity: 1;
+}
+.dionne-about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+}
+.dionne-about h2 {
+    font-size: 2.25rem;
+    margin: 2.25rem 0;
+}
+.dionne-about-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 1.5rem;
+}
+.dionne-about-item div {
+    width: 20%;
+}
+.dionne-about-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;    
+}
+.dionne-about-item p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+.dionne-about-partners {
+    margin-top: 3rem;
+}
+.dionne-about-partners__title {
+    text-align: center;
+}
+.dionne-about-partners__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dionne-about-partners__items img{
+    width: 180px;
+    height: 50px;
+}
+.dionne-news {
+    height: 100vh;
+    background-color: #fafafa;
+    padding-top: 3.5rem ;
+}
+.dionne-news h2, .dionne-jobs h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+}
+.dionne-news-block {
+    display: flex;
+    justify-content: space-around;    
+}
+.dionne-news-block-items, .dionne-jobs-block-card {
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 15%);
+    width: 20%;
+}
+.dionne-news-block-items img {
+    height: 12.5rem;
+}
+.dionne-news-block-items-card__text {
+    padding: 1.8rem 1.5rem;
+}
+.dionne-news-block-items-card__text p, .dionne-jobs-block-card p{
+    font-size: 0.85rem;
+}
+.dionne-jobs {
+    height: 100vh;
+    background-color: #f3f4f6;
+    padding-top: 3.5rem ;
+    position: relative;
+}
+.dionne-jobs-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    margin-bottom: 2rem;
+}
+.dionne-jobs-block-card {
+    width: 50%;
+    padding: 0.75rem;
+}
+.dionne-jobs-block-card strong {
+    font-size: 0.7rem;
+}
+.dionne-jobs > a {
+    position: absolute;
+    right: 0px;
+    color: #2d314d;
+}
+.dionne-footer {
+    height: 160px;
+    width: 100%;
+    background-color: #2d314d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10%;
+}
+.dionne-footer-icons > img {
+    width: 137px;
+    height: 52px;
+}
+.dionne-footer-icons-items {
+    display: flex;
+    justify-content: space-around;
+}
+.dionne-footer-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 70%;
+}
+.dionne-footer-nav a {
+    margin-bottom: 1rem;
+}
+.dionne-footer-nav a:hover {
+    color: white;
+}
+.dionne-footer > p{
+    color: #9698a6;
+}

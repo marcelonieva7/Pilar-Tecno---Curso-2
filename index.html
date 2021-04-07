@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dionne Bank</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="dionne-header">
+        <img class="dionne-header__logo" src="./images/DionneBankLogo1.png" alt="Dionne Bank logo">
+        <nav class="dionne-header__nav">
             <a href="#">Home</a>
             <a href="#">Quienes Somos</a>
             <a href="#">Noticias</a>
@@ -15,110 +17,126 @@
             <a href="#">Contacto</a>
         </nav>
     </header>
-    <section>
-        <div>
-            <h1>Banco digital de ultima generacion</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatem possimus, sapiente voluptatibus consequatur neque ducimus tempora asperiores quam officiis, eveniet numquam recusandae quae obcaecati voluptas optio totam saepe? Cupiditate?</p>
-            <button>Home Banking</button>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-    </section>
-    <section>
-        <div>
-            <h1>Quienes Somos</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, deleniti? Facilis architecto aliquid vero inventore esse ex quidem. Fuga fugit laborum explicabo soluta culpa accusamus commodi, vitae laudantium corrupti fugiat!</p>
-        </div>
-        <div>
-            <div>
-                <img src="" alt="">
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+    <main class="container">
+        <section class="dionne-hero">
+            <div class="dionne-hero-text">
+                <h1 class="dionne-hero-text__title">Banco digital de última generación</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatem possimus, sapiente voluptatibus consequatur neque ducimus tempora asperiores quam officiis, eveniet numquam recusandae quae obcaecati voluptas optio totam saepe? Cupiditate?</p>
+                <a class="btn" href="#">Home Banking</a>
             </div>
-            <div>
-                <img src="" alt="">
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+            <div class="dionne-hero-img">
             </div>
+        </section>
+        <section class="dionne-about">
             <div>
-                <img src="" alt="">
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+                <h2>Quienes Somos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, deleniti? Facilis architecto aliquid vero inventore esse ex quidem. Fuga fugit laborum explicabo soluta culpa accusamus commodi, vitae laudantium corrupti fugiat!</p>
             </div>
-            <div>
-                <img src="" alt="">
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+            <div class="dionne-about-item">
+                <div>
+                    <img src="./images/icon-online.svg" alt="icon">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+                </div>
+                <div>
+                    <img src="./images/icon-onboarding.svg" alt="icon">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+                </div>
+                <div>
+                    <img src="./images/icon-budgeting.svg" alt="icon">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+                </div>
+                <div>
+                    <img src="./images/icon-api.svg" alt="icon">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus iusto dignissimos magni ut temporibus modi cum facilis neque similique! Ducimus amet veniam nisi aliquid doloribus fugiat nulla laborum ad.</p>
+                </div>
+            </div>
+            <div class="dionne-about-partners">
+                <h1 class="dionne-about-partners__title">Algunos de nuestros asociados</h1>
+                <div class="dionne-about-partners__items">
+                    <img src="./images/airbnb (1).svg" alt="airbnb logo">
+                    <img src="./images/mcdonalds.svg" alt="mcdonalds logo">
+                    <img src="./images/tripadvisor-horizontal.svg" alt="tripadvisor logo">
+                    <img src="./images/uber.svg" alt="uber logo">
+                </div>
+            </div>
+        </section>
+        <section class="dionne-news">
+            <h2>Ultimos Articulos</h2>
+            <div class="dionne-news-block">
+                <a class="dionne-news-block-items" href="">
+                    <div class="dionne-news-block-items-card">
+                        <img src="./images/image-currency.jpg">
+                        <div class="dionne-news-block-items-card__text">
+                            <h3>Card Title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="dionne-news-block-items" href="">
+                    <div class="dionne-news-block-items-card">
+                        <img src="./images/image-currency.jpg">
+                        <div class="dionne-news-block-items-card__text">
+                            <h3>Card Title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="dionne-news-block-items" href="">
+                    <div class="dionne-news-block-items-card">
+                        <img src="./images/image-currency.jpg">
+                        <div class="dionne-news-block-items-card__text">
+                            <h3>Card Title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="dionne-news-block-items" href="">
+                    <div class="dionne-news-block-items-card">
+                        <img src="./images/image-currency.jpg">
+                        <div class="dionne-news-block-items-card__text">
+                            <h3>Card Title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="dionne-jobs">
+            <h2>Vacantes</h2>
+            <div class="dionne-jobs-block">
+                <a class="dionne-jobs-block-card">
+                    <strong>Desarrollo</strong>
+                    <h3>Sr. xxxxx dev</h3>
+                    <p>Job description Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur quidem facilis dolore placeat fugit nobis quaerat deserunt numquam. Tempore fugit dolore nesciunt. Dolorum impedit nostrum veniam perspiciatis a quod.</p>
+                </a>
+                <a class="dionne-jobs-block-card">
+                    <strong>Desarrollo</strong>
+                    <h3>Sr. xxxxx dev</h3>
+                    <p>Job description Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur quidem facilis dolore placeat fugit nobis quaerat deserunt numquam. Tempore fugit dolore nesciunt. Dolorum impedit nostrum veniam perspiciatis a quod.</p>
+                </a>
+                <a class="dionne-jobs-block-card">
+                    <strong>Desarrollo</strong>
+                    <h3>Sr. xxxxx dev</h3>
+                    <p>Job description Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur quidem facilis dolore placeat fugit nobis quaerat deserunt numquam. Tempore fugit dolore nesciunt. Dolorum impedit nostrum veniam perspiciatis a quod.</p>
+                </a>
+            </div>
+            <a href="">Ver todas las vacantes</a>
+        </section>
+    </main>
+    <footer class="dionne-footer">
+        <div class="dionne-footer-icons">
+            <img src="./images/DionneBankLogoWhite.png" alt="logo">
+            <div class="dionne-footer-icons-items">
+                <img src="./images/icon-facebook.svg" alt="icon">
+                <img src="./images/icon-twitter.svg" alt="icon">
+                <img src="./images/icon-instagram.svg" alt="icon">
             </div>
         </div>
-        <div>
-            <h1>Algunos de nuestros clientes</h1>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-    </section>    
-    <section>
-        <h1>Ultimos Articulos</h1>
-        <div>
-            <div>
-                <img src="" alt="">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est optio quibusdam! Tempora reprehenderit ipsum assumenda! Nihil quos mollitia placeat dicta, magnam laboriosam cum voluptatibus quaerat illo ipsum, unde consectetur.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1>Vacantes</h1>
-        <div>
-            <h2>Sr. xxxxx dev</h2>
-            <h3>Title job</h3>
-            <p>Job description</p>
-        </div>
-        <div>
-            <h2>Sr. xxxxx dev</h2>
-            <h3>Title job</h3>
-            <p>Job description</p>
-        </div>
-        <div>
-            <h2>Sr. xxxxx dev</h2>
-            <h3>Title job</h3>
-            <p>Job description</p>
-        </div>
-    </section>
-    <footer>
-        <div>
-            <img src="" alt="logo">
-            <img src="" alt="icon">
-            <img src="" alt="icon">
-            <img src="" alt="icon">
-        </div>
-        <nav>
+        <nav class="dionne-footer-nav">
             <a href="#">Home</a>
             <a href="#">Quienes Somos</a>
             <a href="#">Noticias</a>
