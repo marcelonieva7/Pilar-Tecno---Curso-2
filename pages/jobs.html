@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Dionne Jobs</title>
+</head>
+<body>
+    <header class="dionne-header" id="dionne-header">
+        <nav class="dionne-header__nav">
+            <a href="../index.html"><img class="dionne-header__logo" src="../images/DionneBankLogo1.png" alt="Dionne Bank logo"></a>
+            <div><a href="#">Trabajos</a></div>
+        </nav>
+    </header>
+    <main class="dionneJobs-main container">
+        <h1>Encontra las vacantes que tenemos en nuestras distintas sedes</h1>
+        <form class="dionneJobs-main-form" action="#">
+            <div class="dionneJobs-main-form-wrapper">
+                <select id="dionneJobs-main-form__area" name="select" required>
+                    <option value="" disabled selected hidden>Área</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="accounting">Accounting</option>
+                </select>
+                <select id="dionneJobs-main-form__province" name="select2" required>
+                    <option value="" disabled selected hidden>Provincia</option>
+                    <option value="CABA">CABA</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                </select>
+                <fielset class="dionneJobs-experience">
+                    <legend>Experiencia</legend>
+                    <input id="dionneJobs-experience__j" type="radio" name="experience" value="junior" checked><label for="dionneJobs-experience__j">Junior</label>
+                    <input id="dionneJobs-experience__ss" type="radio" name="experience" value="semiSenior"><label for="dionneJobs-experience__ss">Semi Senior</label>
+                    <input id="dionneJobs-experience__s" type="radio" name="experience" value="senior"><label for="dionneJobs-experience__s">Senior</label>
+                </fielset>
+            </div>
+            <button class="btn" id="dionneJobs-main-form__btn" type="submit">Buscar</button>
+        </form>
+        <section class="dionneJobs-main-list">
+
+        </section>
+    </main>
+    <footer class="dionne-footer container" id="dionneJobs-header" style="display: none;">
+        <div class="dionne-footer-icons">
+            <div class="dionne-footer-icons__logo" alt="logo"></div>
+            <div class="dionne-footer-icons-items">
+                <a href="">
+                    <div src="./images/icon-facebook.svg" alt="icon"></div>
+                </a>
+                <a href="">
+                    <div src="./images/icon-twitter.svg" alt="icon"></div>
+                </a>
+                <a href="">
+                    <div src="./images/icon-instagram.svg" alt="icon"></div>
+                </a>
+            </div>
+        </div>
+            <nav class="dionne-footer-nav">
+                <a href="#">Quienes Somos</a>
+                <a href="#">Noticias</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Contacto</a>
+        </nav>
+        <p>Dionne Bank® derechos reservado</p>
+    </footer>
+    <script src="../scripts/jobsApp.js"></script>
+</body>
+</html>

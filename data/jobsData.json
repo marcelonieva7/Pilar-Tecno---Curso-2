@@ -1,0 +1,97 @@
+{
+    "CABA" : {
+        "engineering": {
+            "junior": [
+                {
+                    "title": "Backend CABA jr",
+                    "description": "lorem ipsum"
+                },
+                {
+                    "title": "Frontend CABA jr",
+                    "description":"lorem ipsum"
+                }
+            ],
+            "semiSenior": [
+                {
+                    "title": "Backend CABA ssr",
+                    "description": "lorem ipsum"
+                }
+            ],
+            "senior": [
+
+            ]
+        },
+        "accounting": {
+            "junior": [
+                {
+                    "title": "Contador jr caba",
+                    "description":"lorem ipsum"
+                },
+                {
+                    "title": "Tax jr caba",
+                    "description":"lorem ipsum"
+                }
+            ],
+            "semiSenior": [
+            
+            ],
+            "senior": [
+                {
+                    "title": "Licenciado en administracion de empresas CABA sr",
+                    "description":"lorem ipsum" 
+                }
+            ]
+        }
+    },
+    "La Rioja": {
+        "engineering": {
+            "junior": [],
+            "semiSenior": [],
+            "senior": [
+                {
+                    "title": "Backenddd",
+                    "description": "lorem ipsum"
+                },
+                {
+                    "title": "Frontendddd",
+                    "description":"lorem ipsum"
+                }
+            ]
+        },
+        "accounting": {
+            "junior": [
+                {
+                    "title": "Contadorrr",
+                    "description":"lorem ipsum"
+                },
+                {
+                    "title": "Licenciado en administracion de empresasss",
+                    "description":"lorem ipsum"
+                }
+            ],
+            "semiSenior":[],
+            "senior":[]
+        }
+    },
+    "Mendoza" : {
+        "engineering": {
+            "junior": [],
+            "semiSenior":[],
+            "senior":[]
+        },
+        "accounting": {
+            "junior": [],
+            "semiSenior": [
+                {
+                    "title": "Contador22",
+                    "description":"lorem ipsum"
+                },
+                {
+                    "title": "Licenciado en administracion de empresas22",
+                    "description":"lorem ipsum"
+                }
+            ],
+            "senior": []
+        }
+    }
+}
