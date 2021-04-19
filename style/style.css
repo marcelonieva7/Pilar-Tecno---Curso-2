@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 :root {
-    scroll-behavior: smooth;
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
     font-size: 12px;
@@ -68,7 +67,7 @@ main {
     margin-top: 5rem;
 }
 .container {
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
 }
 .dionne-hero {
     height: calc(100vh - 5rem);
@@ -117,7 +116,7 @@ main {
 .btn {
     position: relative;
     display: inline-block;
-    padding: 0.875rem 2.1875rem;
+    padding: 0.87rem 2.18rem;
     background-image: linear-gradient(to right, #31d35c, #2bb7da);
     border: 0;
     border-radius: 50px;
@@ -142,6 +141,13 @@ main {
 .btn:hover::before {
     opacity: 1;
 }
+.btn--sm {
+    padding: 0.43rem 1.1rem;
+    font-size: 0.72rem;
+    right: 1.25rem;
+    bottom: 1rem;
+    position: absolute;
+}
 .dionne-about {
     display: flex;
     flex-direction: column;
@@ -153,12 +159,16 @@ main {
 }
 .dionne-about-item {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
     margin-top: 2.5rem;
 }
 .dionne-about-item div {
-    width: 20%;
+    width: 60%;
+    text-align: center;
+    margin: 2rem 0;
 }
 .dionne-about-item h3 {
     font-size: 1.5rem;
@@ -170,7 +180,7 @@ main {
     line-height: 1.5;
 }
 .dionne-about-partners {
-    margin: 5rem 0 0;
+    margin: 2.5rem 0 0;
 }
 .dionne-about-partners__title {
     text-align: center;
@@ -188,7 +198,7 @@ main {
 .dionne-news {
     background-color: #fafafa;
 }
-.dionne-news h2, .dionne-jobs h2 {
+.dionne-news h2, .dionne-jobs h2, .dionne-faqs__title {
     font-size: 2.25rem;
 }
 .dionne-news-block {
@@ -205,6 +215,11 @@ main {
     box-shadow: 0px 3px 12px rgb(0 0 0 / 15%);
     width: 70%;
     margin: 2.5rem 0 0;
+    transition: all 175ms ease-in-out;
+    position: relative;
+}
+.dionne-news-block-items:hover, .dionne-jobs-block-card:hover {
+    transform: scale(1.07);
 }
 .dionne-news-block-items img {
     width: 100%;
@@ -215,56 +230,154 @@ main {
 }
 .dionne-news-block-items-card__text p, .dionne-jobs-block-card p{
     font-size: 0.85rem;
+    color: #9698a6;
 }
 .dionne-jobs {
     background-color: #f3f4f6;
-    position: relative;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .dionne-jobs-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dionne-jobs-img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 75%;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 .dionne-jobs-block-card {
-    width: 50%;
-    padding: 0.75rem;
+    width: 80%;
+    padding: 1.25rem;
 }
 .dionne-jobs-block-card strong {
     font-size: 0.7rem;
+    color: #9698a6;
+}
+.dionne-jobs-block-card h3 {
+    margin-top: 0.3rem;
 }
 .dionne-jobs > a {
-    position: absolute;
-    right: 7rem;
     color: #2d314d;
+    align-self: flex-end;
+}
+.dionne-faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    min-height: 100vh;
+}
+.dionne-faqs__title {
+    align-self: flex-start;
+}
+.dionne-faqs li {
+    list-style-type: disclosure-closed;
+    padding: 2rem 0;
+}
+.modal { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.555);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+.modal-dialog {
+    position: relative;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+    cursor: default;
+}
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-dialog > * {
+    padding: 1.7rem;
+}   
+.modal-header, .modal-footer {
+    background-color: #efefef;
+}
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-header .modal-close {
+    font-size: 1.5rem;
+}
+.close-modal {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: inherit;
+}
+.modal p + p {
+    margin-top: 1rem;
 }
 .dionne-footer {
-    height: 160px;
     width: 100%;
-    padding-top: 0;
     background-color: #2d314d;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    padding: 3rem 1rem;
 }
-.dionne-footer-icons > img {
+.dionne-footer-icons > i {
+    background-image: url("../images/DionneBankLogoWhite.png");
+    background-size: cover;
     width: 137px;
     height: 52px;
     margin-bottom: 0.75rem;
+    display: block;
 }
 .dionne-footer-icons-items {
     display: flex;
     justify-content: space-around;
 }
+.dionne-footer-icons-items i {
+    display: block;
+    width: 22px;
+    height: 20px;
+    background-size: cover;
+}
+#dionne-footer-icons-items__tw {
+    background-image: url(../images/icon-twitter.svg);
+}
+#dionne-footer-icons-items__fb {
+    background-image: url(../images/icon-facebook.svg);
+}
+#dionne-footer-icons-items__in {
+    background-image: url(../images/icon-instagram.svg);
+}
 .dionne-footer-nav {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 20%;
-    height: 70%;
 }
 .dionne-footer-nav a {
     margin-bottom: 1rem;
@@ -274,12 +387,6 @@ main {
 }
 .dionne-footer > p{
     color: #9698a6;
-}
-.dionne-footer-icons__logo {
-    background-image: url("../images/DionneBankLogoWhite.png");
-    background-size: cover;
-    height: 100px;
-    width: 300px;
 }
 .dionneJobs-main {
     width: 100%;
@@ -333,8 +440,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-
 .line {
     width: 30px;
     height: 3px;
@@ -361,7 +466,7 @@ main {
     pointer-events: none;
 }
 .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
+    /* clip-path: circle(1000px at 90% -10%); */
     pointer-events: all;
     display: flex;
     flex-direction: column;
@@ -373,11 +478,9 @@ main {
     opacity: 1;
 }
 
-
-
-
 @media screen and (min-width: 768px) {
     :root {
+        scroll-behavior: smooth;
         font-size: 16px;
     }
 
@@ -399,7 +502,7 @@ main {
         width: auto;
         height: auto;
         position: inherit;
-        clip-path: inherit;
+        clip-path: inherit!important;
         pointer-events: all;
     }
     .dionne-hero {
@@ -414,16 +517,21 @@ main {
         width: 50%;
     }
     .dionne-hero-img::before {
-        width: calc(100% + 2.75rem
-        );
-        background-position: 0% 83%;
-        background-size: 150%;
+        width: calc(100% + 2.75rem);
+        background-position: 8% 50%;
+        background-size: 250%;
     }
     .dionne-hero-img::after {
-        width: calc(100% + 2.75rem
-        );
-        background-position: -50% 83%;
+        width: calc(100% + 2.75rem);
+        background-position: -30% 50%;
         background-size: auto;
+    }
+    .dionne-about-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .dionne-about-item div {
+        width: 35%;
     }
     .dionne-about-partners__items img{
         width: 11.25rem;
@@ -437,13 +545,17 @@ main {
     .dionne-news-block-items {
         width: 40%;
     }
-
-
+    .dionne-jobs-img {
+        margin-bottom: 7rem;
+    }
     .dionne-header {
         padding: 0 2.75rem;
     }
     .container {
         padding: 6rem 2.75rem;
+    }
+    .dionne-footer {
+        padding: 4rem 2.75rem;
     }
     .dionneJobs-main {
         padding-top: 4.5rem;
@@ -474,16 +586,37 @@ main {
     }
     .dionne-hero-img::before {
         width: calc(100% + 6rem);
+        background-position: 0% 83%;
+        background-size: 150%;
     }
     .dionne-hero-img::after {
         width: calc(100% + 6rem);
+        background-position: -50% 83%;
     }
     .dionne-about-partners__items img{
         width: 15rem;
         height: 4rem;
     }
+    .dionne-about-item div {
+        width: 22%;
+        text-align: left;
+    }
     .dionne-news-block-items {
         width: 20%;
+    }
+    .dionne-jobs-block {
+        flex-direction: row;
+        align-items: center;
+    }
+    .dionne-jobs-block > h3 {
+        width: 40%;
+        text-align: center;
+    }
+    .dionne-jobs-img {
+        margin-bottom: 0;
+    }
+    .dionne-footer {
+        padding: 4.5rem 6rem;
     }
     .dionneJobs-main {
        padding-top: 4.5rem;
@@ -492,7 +625,7 @@ main {
         width: 9rem;
     }
     .dionneJobs-main-form {
-    width: 75%;
+    width: auto;
     margin: 0 auto;
     }
     .dionneJobs-experience {

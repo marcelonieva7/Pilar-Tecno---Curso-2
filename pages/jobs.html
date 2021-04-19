@@ -10,7 +10,12 @@
     <header class="dionne-header" id="dionne-header">
         <nav class="dionne-header__nav">
             <a href="../index.html"><img class="dionne-header__logo" src="../images/DionneBankLogo1.png" alt="Dionne Bank logo"></a>
-            <div><a href="#">Trabajos</a></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-links"><a href="#">Trabajos</a></div>
         </nav>
     </header>
     <main class="dionneJobs-main container">
@@ -41,8 +46,8 @@
 
         </section>
     </main>
-    <footer class="dionne-footer container" id="dionneJobs-header" style="display: none;">
-        <div class="dionne-footer-icons">
+    <footer class="dionne-footer" id="dionneJobs-footer">
+        <!-- <div class="dionne-footer-icons">
             <div class="dionne-footer-icons__logo" alt="logo"></div>
             <div class="dionne-footer-icons-items">
                 <a href="">
@@ -62,8 +67,12 @@
                 <a href="#">Trabajos</a>
                 <a href="#">Contacto</a>
         </nav>
-        <p>Dionne Bank® derechos reservado</p>
+        <p>Dionne Bank® derechos reservado</p> -->
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="../commons/footer.js"></script>
     <script src="../scripts/jobsApp.js"></script>
+    <script src="../scripts/gsap.js"></script>
 </body>
 </html>
